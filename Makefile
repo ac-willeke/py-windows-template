@@ -9,14 +9,6 @@ codestyle: ## check codestyle (black, isort, ruff)
 	black --config pyproject.toml ./
 	ruff check ./**
 
-docstring: ## create/ update docstring to restructured text
-	pyment -w -o numpydoc /src
-# access denied if no admin access 
-
-pre-commit: ## run pre-commit on all files
-#pre-commit run -a
-	pre-commit run -a --config config/.pre-commit-config.yaml
-
 # --------------------------------------------------------------------------- #
 # Cleaning targets
 # --------------------------------------------------------------------------- #
@@ -31,7 +23,7 @@ clean-build: ## remove build artifacts
 	for /d /r %%d in (dist) do rd /s /q "%%d"
 
 clean-pyc: ## remove Python file and dir artifacts
-	for /f "delims=" %%f in ('dir /s /b *.pyc') do del /f /q "%%f" 
+	for /f "delims=" %%f in ('dir /s /b *.pyc') do del /f /q "%%f"
 	for /f "delims=" %%f in ('dir /s /b *.pyo') do del /f /q "%%f"
 	for /d /r %%d in (__pycache__) do rd /s /q "%%d"
 	for /d /r %%d in (.ipynb_checkpoints) do rd /s /q "%%d"
