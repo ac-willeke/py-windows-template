@@ -1,11 +1,11 @@
-# ${PROJECT}: path/to/local/project/catalog 
+# ${PROJECT}: path/to/local/project/catalog
 # stored in user-dir/.env
 
 # ----------------------------
 # DATA CATALOG
 # ----------------------------
 
-name: 
+name:
   type: filegdb
   filepath: ${TEMPLATE_PROJECT}/path/to/gdb
 

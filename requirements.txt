@@ -5,7 +5,7 @@
 # -e C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3
 
 # Hugin Python API packages
-# -e C:\Program Files\Hugin Expert\HUGIN 9.3 (x64)\HDE9.3Python\Lib 
+# -e C:\Program Files\Hugin Expert\HUGIN 9.3 (x64)\HDE9.3Python\Lib
 
 # external requirements
 # conda install -c conda-forge python-dotenv
