@@ -1,0 +1,58 @@
+# ${PROJECT}: path/to/local/project/catalog 
+# stored in user-dir/.env
+
+# ----------------------------
+# DATA CATALOG
+# ----------------------------
+
+name: 
+  type: filegdb
+  filepath: ${TEMPLATE_PROJECT}/path/to/gdb
+
+
+name2:
+  type: excel
+  filepath: ${TEMPLATE_PROJECT}/path/to/excel
+
+# ----------------------------
+# METADATA
+# ----------------------------
+
+metadata:
+    identification:
+        title:
+            en: english title
+            no: norwegian title (bokmål)
+        description:
+            en: english title
+            no: norwegian title (bokmål)
+        keywords:
+            en:
+                - spatial data
+            no:
+                - romlige data
+        keywords_type: theme
+        terms_of_service: https://opensource.org/license/mit/
+        url: http://example.org
+    license:
+        name: The MIT License (MIT)
+        url: https://opensource.org/license/mit/
+    provider:
+        name: Organization Name
+        url: http://example.org
+    contact:
+        name: Lastname, Firstname
+        position: Position Title
+        address: Mailing Address
+        city: City
+        stateorprovince: Administrative Area
+        postalcode: Zip or Postal Code
+        country: Country
+        phone: +xx-xxx-xxx-xxxx
+        email: you@example.org
+        url: Contact URL
+        hours: Hours of Service
+        instructions: During hours of service.  Off on weekends.
+        role: pointOfContact
+
+

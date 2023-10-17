@@ -1,0 +1,33 @@
+[tool.black]
+# https://github.com/psf/black
+line-length = 88
+color = true
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | env
+    | venv
+)/
+'''
+
+[tool.isort]
+# https://pycqa.github.io/isort/docs/configuration/black_compatibility.html
+profile = "black"
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/settings
+fix = true
+ignore = ["E501"]
+exclude = [
+    ".git",
+    ".env",
+    ".venv"
+]
